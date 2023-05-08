@@ -1,0 +1,57 @@
+.content .contact {
+    background-color: #1f3143;
+    padding: 150px 10%;
+}
+
+
+/* .content .contact .aside_left {} */
+
+.content .contact .aside_left .logo {
+    text-align: center;
+    width: 230px;
+    margin: 0 auto 30px;
+}
+
+.content .contact .aside_left .logo h2 {
+    font-family: 'Montserrat', sans-serif;
+    width: 230px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: rgb(126, 126, 126);
+    ;
+}
+
+.content .contact .aside_left .logo h2 img {
+    width: 18%;
+    border-radius: 50%;
+    margin-right: -10px;
+    margin-bottom: -5px;
+}
+
+.content .contact .aside_left .logo h3 {
+    font-size: 15px;
+    color: rgb(173, 173, 173);
+}
+
+.content .contact .aside_left .icon {
+    width: 360px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.content .contact .aside_left .icon a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+
+/* .content .contact .aside_left .icon a li {} */
+
+.content .contact .aside_left .icon a li i {
+    color: aliceblue;
+    font-size: 25px;
+}

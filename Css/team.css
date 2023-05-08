@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    max-width: 100vw;
+    background-color: #f4f4f4;
+    position: relative;
+    animation: FadeIn 0.8s ease-in 1 both;
+}
+
+.menu a:nth-child(3) {
+    color: rgb(169, 169, 169);
+}
+
+
+/* .content .topic {} */
+
+.content .team-topic {
+    font-size: 30px;
+    background-color: #efefef;
+    padding: 100px 0 30px 15%;
+    margin-bottom: 20px;
+}
+
+.content .team {
+    width: 70%;
+    margin: 0 auto 50px;
+}
+
+.content .team .board-member {
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.content .team .member_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .team .member {
+    width: 30%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.content .team .member1 {
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .team .member1 .left {
+    width: 30%;
+    height: 5%;
+    margin-right: 20px;
+}
+
+.content .team .member1 .left .pic {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .team .member .pic {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content .team .member1 .right {
+    width: 60%;
+    margin-right: 50px;
+}
+
+.content .team .member .right p {
+    margin-bottom: 10px;
+}
+
+.content .team .member .bm-right-1 {
+    display: none;
+}
+
+.content .team .member1 .right p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.content .team .member .pic:hover img {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.content .team .member .member_name {
+    font-size: 26px;
+    font-weight: 100;
+    margin: 10px 0;
+    line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content .team .member .member_position {
+    margin-bottom: 10px;
+    line-height: 2;
+    color: rgb(70, 70, 70);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media(max-width:1200px) {
+    .content .team-topic {
+        padding: 120px 0 30px 2.5%;
+    }
+    .content .team {
+        width: 80%;
+    }
+    .content .team .board-member {
+        margin-bottom: 50px;
+    }
+    .content .team .member_wrap {
+        display: block;
+        margin: 0 auto;
+    }
+    .content .team .member {
+        width: 100%;
+        display: flex;
+    }
+    .content .team .member .left {
+        width: 30%;
+        margin-right: 20px;
+    }
+    .content .team .member .bm-right-0 {
+        display: none;
+    }
+    .content .team .member .bm-right-1 {
+        width: 60%;
+        display: block;
+    }
+}
+
+@media(max-width:767px) {
+    .content .team-topic {
+        padding: 120px 0 30px 2.5%;
+    }
+    .content .team {
+        width: 95%;
+    }
+    .content .team .board-member {
+        margin-bottom: 50px;
+    }
+    .content .team .member_wrap {
+        display: block;
+        margin: 0 auto;
+    }
+    .content .team .member {
+        width: 100%;
+        display: flex;
+    }
+    .content .team .member h2.member_name {
+        font-size: 22px;
+    }
+    .content .team .member h3 {
+        font-size: 12px;
+    }
+    .content .team .member .left {
+        width: 30%;
+        margin-right: 20px;
+    }
+    .content .team .member .left .pic {
+        width: 100%;
+    }
+    .content .team .member .left .pic img {
+        width: 100%;
+    }
+    .content .team .member .bm-right-0 {
+        display: none;
+    }
+    .content .team .member .bm-right-1 {
+        width: 60%;
+        display: block;
+    }
+}
+
+@media(max-width:414px) {
+    .member {
+        width: 100%;
+        display: block;
+    }
+    .member .left {
+        width: 100%;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
