@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(25, 72, 106);
+}
+
+
+/* ----------main event---------- */
+
+.main_Events {
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.swiper {
+    height: fit-content;
+    margin-top: 10%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+
+/* ----------container---------- */
+
+.container {
+    padding: 50px 200px;
+    background-color: rgb(25, 72, 106);
+}
+
+
+/* ----------experience---------- */
+
+.container .experience {
+    padding: 50px 0;
+}
+
+.container .experience h1 {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.container .experience p {
+    color: aliceblue;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+/* ----------events info---------- */
+
+.container .event_info {}
+
+
+/* ----------top block---------- */
+
+.container .event_info .top_block {
+    display: flex;
+}
+
+
+/* ----------event vision---------- */
+
+.event_info .vision {
+    flex: 5;
+}
+
+.event_info .vision .event_cover .pic {
+    display: none;
+}
+
+.event_info .vision .event_cover .active {
+    display: block;
+}
+
+
+/* ----------event selection---------- */
+
+.event_info .selection {
+    flex: 5;
+}
+
+.event_info .version2 {
+    display: none;
+}
+
+.selection .item {
+    margin-bottom: 20px;
+    display: flex;
+    transition: 0.4s;
+    position: relative;
+}
+
+.selection .item .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.selection .item:hover {
+    cursor: pointer;
+}
+
+.selection .active {
+    background-color: #1b526f;
+}
+
+.selection .item h1 {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.selection .item .time {
+    padding: 5px 20px;
+}
+
+.selection .item .text {
+    padding: 5px 20px;
+}
+
+.selection .item .text h1 {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.selection .item .text p {
+    color: rgb(155, 155, 155);
+    margin-top: 10px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.selection .item:hover h1,
+.selection .item:hover .text h1,
+.selection .item:hover .text p {
+    color: aliceblue;
+}
+
+.selection .active h1,
+.selection .active .text h1,
+.selection .active .text p {
+    color: aliceblue;
+}
+
+
+/* ----------bottom block---------- */
+
+.intro_for_event {}
+
+.intro_for_event .item {
+    padding-top: 18vh;
+}
+
+.intro_for_event .item h1 {
+    color: aliceblue;
+}
+
+.intro_for_event .item p {
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+
+/* ----------News Info---------- */
+
+.newsInfo {
+    background-color: rgb(25, 72, 106);
+}
+
+@media(max-width:768px) {
+    .main_Events {
+        height: 60vh;
+    }
+    /* ----------container---------- */
+    .container {
+        padding: 30px 20px;
+    }
+    /* ----------experience---------- */
+    .container .experience {
+        padding: 20px 0;
+    }
+    .container .experience h1 {
+        font-size: 24px;
+    }
+    .container .experience p {
+        font-size: 12px;
+    }
+    .container .event_info .top_block {
+        flex-direction: column;
+    }
+    .intro_for_event .item h1 {
+        font-size: 22px;
+    }
+    .intro_for_event .item p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:530px) {
+    .main_Events {
+        padding-top: 25vh;
+    }
+    .container .experience {
+        padding: 20px 0;
+    }
+    .container .experience h1 {
+        font-size: 24px;
+    }
+    .container .experience p {
+        font-size: 12px;
+    }
+    .container .event_info .top_block {
+        flex-direction: column;
+    }
+    .intro_for_event .item {
+        padding-top: 35vh;
+    }
+    .intro_for_event .item h1 {
+        font-size: 22px;
+    }
+    .intro_for_event .item p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:320px) {
+    .main_Events {
+        height: 25vh;
+    }
+    .container {
+        padding: 20px;
+    }
+    .container .experience h1 {
+        font-size: 18px;
+    }
+    .container .experience p {
+        font-size: 12px;
+    }
+    .event_info .vision {
+        z-index: 8;
+    }
+    .event_info .selection {
+        display: none;
+    }
+    .event_info .version2 {
+        display: block;
+    }
+    .selection .item .time {
+        padding: 0px;
+    }
+    .selection .item .text h1 {
+        font-size: 14px;
+    }
+    .selection .item .text p {
+        font-size: 12px;
+    }
+    .container .event_info .top_block {
+        flex-direction: column;
+    }
+    .intro_for_event .item h1 {
+        font-size: 16px;
+    }
+    .intro_for_event .item p {
+        font-size: 12px;
+    }
+}
