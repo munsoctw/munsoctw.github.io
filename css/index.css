@@ -27,10 +27,11 @@ body {
 .Main_cover {
     width: 100%;
     height: 100vh;
-    background-image: url(../static/Logos/Taipei_Elements/Taipei_101.png);
+    background-image: url(../static/Logos/Taipei_Elements/Taipei_101_02.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top 25% right 0;
+    /* background-position: top 25% right 0; */
+    background-position: 10% 0  center;
     z-index: 0;
     position: relative;
 }
@@ -49,22 +50,15 @@ body {
 }
 
 .Main_cover .HV img {
-    width: 5%;
+    width: 4%;
 }
 
-.Main_cover .TW {
-    bottom: 100px;
-}
-
-.Main_cover .TW img {
-    width: 20%;
-}
 
 .Main_cover .mask {
     width: 100%;
     height: 100vh;
     background-color: rgba(145, 145, 145, 0.2);
-    /* backdrop-filter: blur(0.5px); */
+    background:linear-gradient(180deg, transparent 0%,rgba(0,0,0,0.6) 90%);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -72,17 +66,72 @@ body {
     align-items: center;
     padding-bottom: 100px;
 }
+.Main_cover .text  {
+    position: absolute;
+    width: 100vw;
+    height: 66vh;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.mask h1 {
+.Main_cover .text h1 {
     color: rgb(255, 255, 255);
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 300;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.mask h1:nth-child(2) {
-    font-size: 80px;
+.Main_cover .text h1:nth-child(2) {
+    font-size: 40px;
+    font-weight: 500;
 }
 
+.Main_cover .register{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+.Main_cover .register a{
+    text-align: center;
+    display: block;
+    width: 349px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    transition: 0.4s 0.05s;
+}
+.Main_cover .register p{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 21px;
+}
+.Main_cover .register a:hover{
+    transform: scale(1.05);
+}
+
+
+.Main_cover .TW {
+    bottom: 30px;
+}
+
+.Main_cover .TW img {
+    width: 15%;
+}
 
 /* ----------the news---------- */
 
@@ -200,10 +249,10 @@ body {
         background-image: url(../static/Logos/Taipei_Elements/Taipei_101_TICC.jpg);
     }
     .Main_cover .HV img {
-        width: 15%;
+        width: 5%;
     }
     .Main_cover .TW img {
-        width: 30%;
+        width: 20%;
     }
     .mask h1 {
         font-size: 30px;
@@ -212,6 +261,21 @@ body {
     .mask h1:nth-child(2) {
         font-size: 50px;
     }
+    .Main_cover .text h1{
+        font-size: 26px;
+    }
+    .Main_cover .text h1:nth-child(2){
+        font-size: 26px;
+    }
+    .Main_cover .register{}
+    .Main_cover .register a{
+        width: 260px;
+        font-size: 12px;
+    }
+    .Main_cover .register p{
+        font-size: 16px;
+    }
+
     .the_news {
         padding: 20px 20px 50px;
     }
@@ -256,16 +320,22 @@ body {
 
 @media (max-width:530px) {
     .Main_cover .HV img {
-        width: 30%;
+        width: 10%;
     }
     .Main_cover .TW img {
-        width: 80%;
+        width: 40%;
     }
     .mask h1 {
         font-size: 18px;
     }
     .mask h1:nth-child(2) {
         font-size: 26px;
+    }
+    .Main_cover .text h1{
+        font-size: 20px;
+    }
+    .Main_cover .text h1:nth-child(2){
+        font-size: 20px;
     }
     .the_news {
         padding: 60px 20px 50px;
@@ -292,7 +362,7 @@ body {
         background-image: url(../static/Logos/Taipei_Elements/Taipei_101_TICC.jpg);
     }
     .Main_cover .HV img {
-        width: 40%;
+        width: 12%;
     }
     .Main_cover .TW img {
         width: 50%;
@@ -303,6 +373,19 @@ body {
     .mask h1:nth-child(2) {
         font-size: 16px;
     }
+    .Main_cover .text h1{
+        font-size: 14px;
+    }
+    .Main_cover .text h1:nth-child(2){
+        font-size: 14px;
+    }
+    .Main_cover .register a{
+        width: 240px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .Main_cover .register p{}
+
     .the_news {
         padding: 10px;
     }
