@@ -126,122 +126,26 @@ body {
 
 
 .Main_cover .TW {
-    bottom: 30px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Main_cover .TW img {
+.Main_cover .TW h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.Main_cover .TW .harvard_link{
     width: 15%;
 }
 
-/* ----------the news---------- */
-
-.the_news {
-    padding: 50px 200px;
-    background-color: rgb(25, 72, 106);
-    border-bottom: 1px rgb(71, 104, 126) solid;
-}
-
-.the_news .item {
-    margin-top: 100px;
-}
-
-.the_news .pic {}
-
-.the_news .text {}
-
-.the_news .text h1 {
-    color: aliceblue;
-    font-weight: 400;
-}
-
-.the_news .text p {
-    color: aliceblue;
-    margin-top: 20px;
-    line-height: 1.5;
-}
-
-
-/* ----------index-container-------- */
-
-.index-container {
-    padding: 50px 200px;
-    background-color: rgb(25, 72, 106);
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border-bottom: 1px rgb(71, 104, 126) solid;
-}
-
-
-/* ----------main event---------- */
-
-.index-container .main_Events {
-    width: 45%;
-    display: flex;
-}
-
-.index-container .main_Events .swiper {
-    width: 100%;
-    height: fit-content;
-}
-
-.index-container .main_Events .swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.index-container .main_Events .swiper-slide img {
+.Main_cover .TW .harvard_link img {
     width: 100%;
 }
 
-
-/* ----------index main event text---------- */
-
-.index-container .text {
-    width: 45%;
-}
-
-.index-container .text p {
-    color: aliceblue;
-    line-height: 1.5;
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-
-/* ----------slogan---------- */
-
-.slogan {
-    width: 100%;
-    background-color: rgb(25, 72, 106);
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    padding: 50px 200px;
-}
-
-.slogan .logo {
-    width: 30%;
-    padding: 50px 0;
-}
-
-.slogan .text {
-    width: 70%;
-    padding: 50px 20px 50px 0;
-}
-
-.slogan .text h1 {
-    color: aliceblue;
-    font-weight: 500;
-    text-align: center;
-}
-
-.slogan .text p {
-    margin-top: 20px;
-    color: aliceblue;
-    line-height: 2;
-    text-align: center;
-}
 
 @media (max-width:768px) {
     /* ----------Main Cover---------- */
