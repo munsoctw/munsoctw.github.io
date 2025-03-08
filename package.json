@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://chengxujustin.github.io/MUN-Society-Taiwan/",
-=======
   "homepage": "https://MUN-Society-Taiwan/",
->>>>>>> 4f293b9a (Homepage Update)
   "name": "mst-web",
   "private": true,
   "version": "0.0.0",
