@@ -1,0 +1,84 @@
+/* ========== Meet the Team ========== */
+.desktopTeam{
+    /* display: none; */
+}
+
+.mobileTeam{
+    display: none;
+}
+
+.MeetTeam{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    background-color: #fff;
+}
+
+.pic{
+    width: 32%;
+}
+
+.pic .avatar{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.MeetTeam .text{
+    width: 66%;
+}
+
+.MeetTeam .text .top_title{
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.MeetTeam .text .top_title h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.MeetTeam .text h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.MeetTeam .text p{
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px){}
+@media (max-width: 786px){}
+@media (max-width: 430px){
+    .desktopTeam{
+        display: none;
+    }
+    
+    .mobileTeam{
+        display: block;
+    }
+
+    .slick-slider, .slick-initialized{
+        width: 100%;
+    }
+
+    .slick-track{
+        width:100%;
+        background-color: #5bc20c;
+    }
+    
+    .mobile_MeetTeam{
+        /* width: 400px; */
+    }
+    
+    .mobile_MeetTeam .pic{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mobile_MeetTeam .pic .avatar{
+        width: 100%;
+    }
+}

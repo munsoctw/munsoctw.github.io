@@ -1,0 +1,40 @@
+.instagram_news{
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 50px;
+}
+
+.overflowFrame{
+    width: 150vw;
+    display: flex;
+    justify-content: left;
+}
+
+.rsme-embed, .rsme-instagram-embed{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.HoverCard, .Feedback, .SocialProof, .Footer{
+    display: none;
+}
+
+@media (max-width:1024px) {
+}
+
+@media (max-width:786px) {
+    .overflowFrame{
+        width: 200vw;
+    }
+}
+
+@media (max-width:430px) {
+    .overflowFrame{
+        width: 300vw;
+    }
+
+    .rsme-embed, .rsme-instagram-embed{
+        width: 330px;
+        margin-right: 50px;
+    }
+}

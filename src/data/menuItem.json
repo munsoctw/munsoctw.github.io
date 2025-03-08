@@ -1,0 +1,14 @@
+[
+    {
+        "id": "about",
+        "menu": "About"
+    },
+    {
+        "id": "events",
+        "menu": "Events"
+    },
+    {
+        "id": "contact",
+        "menu": "Contact"
+    }
+]
