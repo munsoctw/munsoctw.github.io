@@ -1,0 +1,9 @@
+:root{
+    --dark-blue-bg:#00466C;
+    --dark-blue-bg-2:#046599;
+    --dark-blue-bg-3:#0582c5;
+}
+
+.whiteBg{
+    background-color: #fff;
+}

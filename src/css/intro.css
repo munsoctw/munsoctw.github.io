@@ -1,0 +1,16 @@
+/* IntroList */
+
+.intro{
+    background-color: #fff;
+    margin-bottom: 120px;
+}
+
+.intro p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.paragraph{
+    margin-bottom: 10px;
+}
