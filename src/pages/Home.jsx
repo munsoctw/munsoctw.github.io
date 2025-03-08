@@ -12,6 +12,7 @@ const Home = () => {
   return (
     
     <div className="homePage">
+      <h2>Test</h2>
       <Logo_animation />
       <Bring_people listings={BringPeople}/>
       <World_MUN_Analysis />
