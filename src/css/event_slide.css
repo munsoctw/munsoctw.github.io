@@ -1,0 +1,50 @@
+/* .Event_slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
+
+.Event_slide .item{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Event_slide .pic{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.Event_slide .pic img{
+    width: 100%;
+}
+
+.Event_slide .txt{
+    margin-top: 20px;
+}
+
+.Event_slide .txt h1{
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.Event_slide .txt h2{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.Event_slide .txt p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.slick-list{
+}
+
+.slick-slider{
+    width: 45%;
+}
