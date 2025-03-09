@@ -1,6 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-// import './index.css'
 import './css/home.css'
 import './css/content.css'
 import Footer from './components/Footer'
@@ -31,12 +30,12 @@ function App() {
 
   return (
     
-    <div style={{paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
+    <div style={{backgroundColor: getBGcolor(), position:"relative"}}>
         
 
       <Routes>
-        {location.pathname === "/MUN-Society-Taiwan/" && (
-          <Route path='/MUN-Society-Taiwan/' element={<Home />}/>
+        {location.pathname === "/munsoc.tw/" && (
+          <Route path='/munsoc.tw/' element={<Home />}/>
           
         )}
         {/* <Route path="MUN-Society-Taiwan" element={<Home />}/> */}
@@ -45,10 +44,10 @@ function App() {
         <Route path="MUN-Society-Taiwan/contact" element={<Contact />}/>
       </Routes>
 
-      <div id='toIndex'></div>
+      {/* <div id='toIndex'></div> */}
       
-      <Header /> 
-      <Footer />
+      {/* <Header /> 
+      <Footer /> */}
     </div>
   )
 }
