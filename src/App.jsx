@@ -14,7 +14,7 @@ function App() {
 
   const getBGcolor = () => {
     switch (location.pathname) {
-      case '/MUN-Society-Taiwan/':
+      case '/munsoc.tw/':
         // return "var(--dark-blue-bg)"
         return "#fff"
       case '/MUN-Society-Taiwan/about':
@@ -34,8 +34,8 @@ function App() {
         
 
       <Routes>
-        {location.pathname === "/MUN-Society-Taiwan/" && (
-          <Route path='/MUN-Society-Taiwan/' element={<Home />}/>
+        {location.pathname === "/munsoc.tw/" && (
+          <Route path='/munsoc.tw/' element={<Home />}/>
         )}
         {/* <Route path="MUN-Society-Taiwan" element={<Home />}/> */}
         <Route path="MUN-Society-Taiwan/about" element={<About />}/>
