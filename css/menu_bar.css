@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+.menu_bar{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #fff;
+    z-index: 50;
+}
+
+.menu_bar ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu_bar ul a{
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.menu_bar ul a i{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:425px){
+    .menu_bar{
+        display: block;
+    }
+
+}

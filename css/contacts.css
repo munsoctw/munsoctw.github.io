@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* ----------text container---------- */
+
+.container {}
+
+.container .title-info {
+    padding: 50px 200px;
+    background-color: rgb(25, 72, 106);
+    text-align: center;
+}
+
+.container .title-info h1 {
+    color: aliceblue;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.container .title-info p {
+    color: aliceblue;
+    line-height: 2;
+}
+
+.container .contact-info {
+    padding: 50px 200px;
+}
+
+.container .contact-info h1 {
+    margin-bottom: 20px;
+}
+
+.container .contact-info .top-block {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container .contact-info .bottom-block {
+    display: flex;
+    justify-content: center;
+}
+
+.container .contact-info .item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.container .contact-info .item .logo {}
+
+.container .contact-info .item .logo i {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(33, 85, 122);
+}
+
+.container .contact-info .item .text {
+    padding: 20px;
+}
+
+.container .contact-info .item .text h1 {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.container .contact-info .item .text p {}
+.container .contact-info .item .text a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:768px) {
+    .container .title-info {
+        padding: 50px 20px;
+    }
+    .container .contact-info {
+        padding: 50px 20px;
+    }
+    .container .contact-info .bottom-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .contact-info .item {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .container .contact-info .item .logo {
+        width: 20%;
+    }
+    .container .contact-info .item .logo i {
+        font-size: 40px;
+    }
+    .container .contact-info .item .text {
+        width: 80%;
+    }
+}
+
+@media(max-width:530px) {
+    .container .title-info {
+        padding: 50px 20px;
+    }
+}
+
+@media(max-width:425px) {
+    .container .contact-info {
+        padding: 50px 20px;
+    }
+    .container .contact-info .top-block {
+    }
+    .container .contact-info .top-block h1{
+        font-size: 26px;
+    }
+    .container .contact-info .bottom-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .contact-info .item {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .container .contact-info .item .logo {
+        width: 20%;
+    }
+    .container .contact-info .item .logo i {
+        font-size: 40px;
+    }
+    .container .contact-info .item .text {
+        width: 80%;
+    }
+}
+
+@media(max-width:320px) {
+    .container .title-info {
+        padding: 20px;
+    }
+    .container .title-info h1 {
+        font-size: 24px;
+    }
+    .container .title-info p {
+        font-size: 12px;
+    }
+    .container .contact-info {
+        padding: 20px;
+    }
+    .top-block h1 {
+        font-size: 18px;
+    }
+    .top-block p {
+        font-size: 12px;
+    }
+    .container .contact-info .bottom-block .item {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container .contact-info .item .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .container .contact-info .item .logo i {
+        font-size: 40px;
+    }
+    .container .contact-info .item .text {
+        width: 100%;
+        text-align: center;
+    }
+    .container .contact-info .item .text h1 {}
+    .container .contact-info .item .text p {}
+}
