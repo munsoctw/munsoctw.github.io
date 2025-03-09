@@ -1,8 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-// import './index.css'
-import './css/home.css'
-import './css/content.css'
+// import './css/home.css'
+// import './css/content.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { About, Events, Contact, Home } from './pages' 
@@ -36,7 +35,6 @@ function App() {
       <Routes>
         {location.pathname === "/MUN-Society-Taiwan/" && (
           <Route path='/MUN-Society-Taiwan/' element={<Home />}/>
-          
         )}
         {/* <Route path="MUN-Society-Taiwan" element={<Home />}/> */}
         <Route path="MUN-Society-Taiwan/about" element={<About />}/>
@@ -46,8 +44,8 @@ function App() {
 
       <div id='toIndex'></div>
       
-      <Header /> 
-      <Footer />
+      {/* <Header /> 
+      <Footer /> */}
     </div>
   )
 }
