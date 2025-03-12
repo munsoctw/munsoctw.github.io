@@ -1,0 +1,174 @@
+/* ========== Desktop Version Header ========== */
+.index_header{
+    display: none;
+}
+
+.desktopHeader{
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    padding-right: 20px;
+    background-color: #00466C;
+    margin: 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.phoneHeader{
+      display: none;  
+}
+
+.HeaderLogo{
+    display: none;
+}
+
+.logo_container{
+    width: 20%;
+}
+
+.logo{
+   width: 100%;
+   height: auto;
+   padding: 0;
+}
+
+header nav{
+    width: 70%;
+}
+
+header nav ul{
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav ul li::after{
+    /* content: ""; */
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(215, 161, 0);
+    transition: .4s;
+}
+
+header nav ul li:hover{
+    background-color: #035988;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+header nav ul li:hover::after{
+    width: 100%;
+}
+
+header nav ul li .navLink{
+    display: block;
+    padding: 10px 30px;
+    color: #ffffff;
+    transform: uppercase;
+    border-radius: 5px;
+}
+
+header nav ul li a.active{
+    font-weight: 600;
+    color: rgb(215, 161, 0);
+}
+
+header nav ul li:has( > a.active) {
+    border-bottom: 1px solid rgb(215, 161, 0);
+}
+
+header .social_media{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #a0a07d; */
+}
+
+header .social_media .media_icon{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+@media (max-width:430px){
+    .desktopHeader{
+        display: none;
+    }
+    
+    .logo_container{
+        display: none;
+    }
+
+    .social_media{
+        display: none;
+    }
+
+    /* ========== Cellphone Version Header ========== */
+    .HeaderLogo{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .HeaderLogo img{
+        width: 100%;
+    }
+
+    .phoneHeader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;  
+        padding: 0px;
+        background-color: #e3e3e3;
+        margin: 0;
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .phoneHeader nav{
+        width: 100%;
+    }
+
+    .phoneHeader nav{
+        width: 100%;
+    }
+    
+    .phoneHeader nav ul{
+        padding: 0px;
+        justify-content: space-between;
+    }
+    
+    .phoneHeader nav ul li{
+        margin: 0px;
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phoneHeader nav ul li:hover{
+        background-color: transparent;
+    }
+
+    .phoneHeader nav ul li .navLink{
+        padding: 20px 30px;
+        color: black;
+    }
+
+    .phoneHeader nav ul li a.active{
+        background-color: transparent;
+    }
+}
