@@ -14,18 +14,32 @@ function App() {
 
   const getBGcolor = () => {
     switch (location.pathname) {
-      case '/munsoc.tw/':
-        // return "var(--dark-blue-bg)"
-        return "#fff"
-      case '/munsoc.tw/about':
-        return "#ffffff"
-      case '/munsoc.tw/events':
+      case '/':
         return "var(--dark-blue-bg)"
-      case '/munsoc.tw/contact':
+        return "#fff"
+      case '/about':
+        return "#ffffff"
+      case '/events':
+        return "var(--dark-blue-bg)"
+      case '/contact':
         return "var(--dark-blue-bg)"
       default: return "transparent"
     }
   }
+
+  // const getBGcolor = () => {
+  //   // More flexible path matching
+  //   if (location.pathname === '/' || location.pathname === '/munsoc.tw/' || location.pathname === '') {
+  //     return "#fff";
+  //   } else if (location.pathname.includes('about')) {
+  //     return "#ffffff";
+  //   } else if (location.pathname.includes('events')) {
+  //     return "var(--dark-blue-bg)";
+  //   } else if (location.pathname.includes('contact')) {
+  //     return "var(--dark-blue-bg)";
+  //   }
+  //   return "transparent";
+  // }
 
 
   return (
@@ -34,14 +48,14 @@ function App() {
         
 
       <Routes>
-        {location.pathname === "/munsoc.tw/" && (
-          <Route path='/munsoc.tw/' element={<Home />}/>
+        {location.pathname === "/" && (
+          <Route path='/' element={<Home />}/>
           
         )}
         {/* <Route path="munsoc.tw" element={<Home />}/> */}
-        <Route path="munsoc.tw/about" element={<About />}/>
-        <Route path="munsoc.tw/events" element={<Events />}/>
-        <Route path="munsoc.tw/contact" element={<Contact />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/events" element={<Events />}/>
+        <Route path="/contact" element={<Contact />}/>
       </Routes>
 
       {/* <div id='toIndex'></div> */}
