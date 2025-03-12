@@ -17,11 +17,11 @@ function App() {
       case '/munsoc.tw/':
         // return "var(--dark-blue-bg)"
         return "#fff"
-      case '/MUN-Society-Taiwan/about':
+      case '/munsoc.tw/about':
         return "#ffffff"
-      case '/MUN-Society-Taiwan/events':
+      case '/munsoc.tw/events':
         return "var(--dark-blue-bg)"
-      case '/MUN-Society-Taiwan/contact':
+      case '/munsoc.tw/contact':
         return "var(--dark-blue-bg)"
       default: return "transparent"
     }
@@ -38,10 +38,10 @@ function App() {
           <Route path='/munsoc.tw/' element={<Home />}/>
           
         )}
-        {/* <Route path="MUN-Society-Taiwan" element={<Home />}/> */}
-        <Route path="MUN-Society-Taiwan/about" element={<About />}/>
-        <Route path="MUN-Society-Taiwan/events" element={<Events />}/>
-        <Route path="MUN-Society-Taiwan/contact" element={<Contact />}/>
+        {/* <Route path="munsoc.tw" element={<Home />}/> */}
+        <Route path="munsoc.tw/about" element={<About />}/>
+        <Route path="munsoc.tw/events" element={<Events />}/>
+        <Route path="munsoc.tw/contact" element={<Contact />}/>
       </Routes>
 
       {/* <div id='toIndex'></div> */}
