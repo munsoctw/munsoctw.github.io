@@ -3,35 +3,12 @@
     display: none;
 }
 
-.desktopHeader{
-    width: 100%;
-    display: flex;  
-    align-items: center;
-    padding-right: 20px;
-    background-color: #00466C;
-    margin: 0;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
 .phoneHeader{
       display: none;  
 }
 
 .HeaderLogo{
     display: none;
-}
-
-.logo_container{
-    width: 20%;
-}
-
-.logo{
-   width: 100%;
-   height: auto;
-   padding: 0;
 }
 
 header nav{
@@ -86,19 +63,6 @@ header nav ul li a.active{
 header nav ul li:has( > a.active) {
     border-bottom: 1px solid rgb(215, 161, 0);
 }
-
-header .social_media{
-    width: 10%;
-    display: flex;
-    justify-content: flex-end;
-    /* background-color: #a0a07d; */
-}
-
-header .social_media .media_icon{
-    margin-right: 20px;
-    font-size: 20px;
-}
-
 
 @media (max-width:430px){
     .desktopHeader{

@@ -11,7 +11,7 @@ const Header = () => {
 
   const getOpacity_status = () => {
     switch (location.pathname) {
-      case '/MUN-Society-Taiwan/' :
+      case '/' :
         return "0"
       default: return "1"
     }
@@ -19,8 +19,9 @@ const Header = () => {
 
   const menuRender = menuItem.map((menu, index) => {
     return(
-      <div>Header
-      </div>
+      <li className='mg-r-40' key={index}>
+        <Link to={`/${menu.id}`} style={{color:"#fff"}}>{menu.menu}</Link>
+      </li>
     )
   })
 
@@ -29,30 +30,31 @@ const Header = () => {
 
     <>
     {/*  Desktop version header */}
-      <header className="desktopHeader" style={{opacity: getOpacity_status()}}>
+      <header className="" style={{opacity: getOpacity_status()}}>
 
-        <div className='df'>
+        <div className='df' style={{width:"75%", height:"100%"}}>
           {/* Logo Container */}
-          <div className="logo_container">
-            <Link to="MUN-Society-Taiwan/">
-              <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" />
-            </Link>
-          </div>
+          <Link to="/" style={{height:"100%"}} className='mg-r-40'>
+            <img className="logo" src={mstIcon.logo_icon} alt="MST Logo" style={{height:"100%"}}/>
+          </Link>
 
           {/* Header Navigation */}
-          
+          <ul className='df aln-itm-c' style={{width:"80%"}}>
+            {menuRender}
+          </ul>
 
         </div>
 
 
         {/* Social Media Link Icon */}
-        <ul className="social_media">
+        <ul className="social_media df jc-fe" style={{width:"10%"}}>
           <a href="https://www.instagram.com/munsoc.tw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'>
             <FontAwesomeIcon 
             icon={faSquareInstagram}
             // size={20}
             color='#ffffff'
-            className='media_icon'
+            className='mg-r-20'
+            style={{fontSize:"20"}}
             />
           </a>
           <a href="https://www.facebook.com/profile.php?id=61555679222438" target='_blank'>
@@ -60,7 +62,8 @@ const Header = () => {
             icon={faSquareFacebook}
             // size={20}
             color='#ffffff'
-            className='media_icon'
+            className='mg-r-20'
+            style={{fontSize:"20"}}
             />
           </a>
           <a href="">
@@ -68,14 +71,15 @@ const Header = () => {
             icon={faSquareBehance}
             // size={20}
             color='#ffffff'
-            className='media_icon'
+            className='mg-r-20'
+            style={{fontSize:"20"}}
             />
           </a>
         </ul>
       </header>
 
     {/*  Cellphone version header */}
-      <div className="HeaderLogo">
+      {/* <div className="HeaderLogo">
         <img src={mstIcon.logo_icon} alt="" />
       </div>
 
@@ -84,18 +88,18 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <NavLink className="navLink" to="MUN-Society-Taiwan/about">About</NavLink>
+              <NavLink className="navLink" to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="MUN-Society-Taiwan/events">Events</NavLink>
+              <NavLink className="navLink" to="/events">Events</NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="MUN-Society-Taiwan/contact">Contact</NavLink>
+              <NavLink className="navLink" to="/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>
 
-      </header>
+      </header> */}
 
     </>
 

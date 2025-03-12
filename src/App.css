@@ -8,14 +8,8 @@ body{
   background-color: #fff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  /* filter: drop-shadow(0 0 2em #646cffaa); */
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -329,6 +323,10 @@ body{
   margin-right: 30px;
 }
 
+.mg-r-40{
+  margin-right: 40px;
+}
+
 .mg-b-5{
   margin-bottom: 5px;
 }
@@ -463,6 +461,10 @@ body{
 
 .jc-sa{
   justify-content: space-around;
+}
+
+.jc-fe{
+  justify-content: flex-end;
 }
 
 /* Align-items */
