@@ -65,8 +65,8 @@ function App() {
 
       {/* <div id='toIndex'></div> */}
       
-      <Header /> 
-      <Footer />
+      {/* <Header />  */}
+      {/* <Footer /> */}
     </div>
   )
 }

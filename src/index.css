@@ -18,7 +18,9 @@
 
 body{
     padding-top: 150px;
-    background-color: #00466C;
+    /* background-color: #00466C; */
+    /* Maintenance BG */
+    background-color: #ffffff;
 }
 
 .main{

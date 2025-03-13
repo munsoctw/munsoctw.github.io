@@ -12,7 +12,7 @@ import PastConference from '../components/home/PastConference'
 const Home = () => {
   return (
     
-    <div className="homePage" style={{position:"relative"}}>
+    <div className="" style={{position:"relative"}}>
       {/* <Logo_animation />
       <Bring_people listings={BringPeople}/>
       <World_MUN_Analysis />
@@ -22,7 +22,9 @@ const Home = () => {
       <Instagram_news /> */}
 
       <div className='maintenance'>
-        <img src="https://raw.githubusercontent.com/munsoctw/munsoctw.github.io/c388eb969dc21aeed92948c084e53cac7077ba67/index.gif" alt="Website under maintenance" />
+        <div>
+          <img src="https://raw.githubusercontent.com/munsoctw/munsoctw.github.io/c388eb969dc21aeed92948c084e53cac7077ba67/index.gif" alt="Website under maintenance" />
+        </div>
       </div>
     </div>
 
