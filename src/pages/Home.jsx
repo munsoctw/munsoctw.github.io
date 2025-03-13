@@ -13,17 +13,17 @@ const Home = () => {
   return (
     
     <div className="homePage" style={{position:"relative"}}>
-      <Logo_animation />
+      {/* <Logo_animation />
       <Bring_people listings={BringPeople}/>
-      {/* <World_MUN_Analysis /> */}
-      {/* <Feature listings={Featuring_item}/> */}
+      <World_MUN_Analysis />
+      <Feature listings={Featuring_item}/>
       <MainEntry />
       <PastConference />
-      <Instagram_news />
+      <Instagram_news /> */}
 
-      {/* <div className='maintenance'>
+      <div className='maintenance'>
         <img src="https://raw.githubusercontent.com/munsoctw/munsoctw.github.io/c388eb969dc21aeed92948c084e53cac7077ba67/index.gif" alt="Website under maintenance" />
-      </div> */}
+      </div>
     </div>
 
   )
