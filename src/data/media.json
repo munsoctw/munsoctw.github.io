@@ -1,0 +1,20 @@
+[
+    {
+        "id": "instagram",
+        "icon":"faSquareInstagram",
+        "color": "#fff",
+        "url": "https://www.instagram.com/munsoc.tw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        "id": "facebook",
+        "icon":"faSquareFacebook",
+        "color": "#fff",
+        "url": "https://www.facebook.com/profile.php?id=61555679222438"
+    },
+    {
+        "id": "behance",
+        "icon":"faSquareBehance",
+        "color": "#fff",
+        "url": "https://www.instagram.com/munsoc.tw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    }
+]

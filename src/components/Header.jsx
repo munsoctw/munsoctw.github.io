@@ -4,7 +4,7 @@ import menuItem from '../data/menuItem.json'
 import mstIcon from '../data/src.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareInstagram, faSquareFacebook, faSquareBehance } from '@fortawesome/free-brands-svg-icons';
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
   const menuRender = menuItem.map((menu, index) => {
     return(
       <li className='mg-r-40' key={index}>
-        <Link to={`/${menu.id}`} style={{color:"#fff"}}>{menu.menu}</Link>
+        <Link to={`/${menu.id}`} style={{color:"#fff"}} className='pd-10'>{menu.menu}</Link>
       </li>
     )
   })

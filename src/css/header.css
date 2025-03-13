@@ -1,8 +1,4 @@
 /* ========== Desktop Version Header ========== */
-.index_header{
-    display: none;
-}
-
 .phoneHeader{
       display: none;  
 }
@@ -72,11 +68,7 @@ header nav ul li:has( > a.active) {
     .logo_container{
         display: none;
     }
-
-    .social_media{
-        display: none;
-    }
-
+    
     /* ========== Cellphone Version Header ========== */
     .HeaderLogo{
         display: block;

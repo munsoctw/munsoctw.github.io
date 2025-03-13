@@ -1,14 +1,64 @@
 [
     {
         "id": "about",
-        "menu": "About"
+        "menu": "About",
+        "sub":[
+            {
+                "id": "what-is-MUN",
+                "menu": "What is MUN"
+            },
+            {
+                "id": "who-are-we",
+                "menu": "Who Are We"
+            },
+            {
+                "id": "our-mission",
+                "menu": "Our Miission"
+            },
+            {
+                "id": "meet-the-team",
+                "menu": "Meet the Team"
+            },
+            {
+                "id": "sponsor",
+                "menu": "Sponsor"
+            },
+            {
+                "id": "contactUs",
+                "menu": "Contact Us"
+            }
+        ]
     },
     {
-        "id": "events",
-        "menu": "Events"
+        "id": "news",
+        "menu": "News",
+        "sub":[]
+    },
+    {
+        "id": "conferences",
+        "menu": "Conferences",
+        "sub":[
+            {
+                "id": "latest-news",
+                "menu": "Latest News"
+            },
+            {
+                "id": "media-explosions",
+                "menu": "Media Explosions"
+            },
+            {
+                "id": "document",
+                "menu": "Document"
+            },
+            {
+                "id": "joinUs",
+                "menu": "Join Us"
+            }
+        ]
     },
     {
         "id": "contact",
-        "menu": "Contact"
+        "menu": "Contact",
+        "sub":[]
     }
 ]

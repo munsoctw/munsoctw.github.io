@@ -6,11 +6,16 @@ import Event_slide from '../components/Event_slide'
 import event_slide_list from '../data/event_slide.json'
 
 const Events = () => {
+
+
   return (
-    <div className="darkBg">
-      <RenderContent listings={Event_Content}/>
+    <div className="darkBg" style={{marginTop:"-30px"}}>
+      {/* <RenderContent listings={Event_Content}/>
       <Event_slide listings={event_slide_list} />
-      <RenderContent listings={Event_Items}/>
+      <RenderContent listings={Event_Items}/> */}
+
+      
+
     </div>
   )
 }

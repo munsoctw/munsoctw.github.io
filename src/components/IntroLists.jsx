@@ -1,7 +1,6 @@
 // import React from 'react'
 import '../css/content.css'
 import '../index.css'
-import '../css/intro.css'
 import PropTypes from 'prop-types'
 
 const IntroLists = ( {listings} ) => {
@@ -10,12 +9,27 @@ const IntroLists = ( {listings} ) => {
   
     const renderParagraph = item.content.map((paragraph, index) => {
       return( 
-        <p className="mg-b-10" key={index}>{paragraph}</p>
+        <p
+          key={index}
+          className="mg-b-10"
+          style={{
+            fontSize: "16px",
+            lineHeight: "1.5",
+            marginBottom: "1em"
+          }}
+        >
+          {paragraph}
+        </p>
       )
     })
 
     return (
-      <div key={index} className="intro PageXContainer" id={item.id}>
+      <div
+        key={index}
+        className="PageXContainer"
+        style={{marginBottom:"100px", color:"var(--white-0)"}}
+        id={item.id}
+      >
         <h1
           style={{
             fontSize: "36px",

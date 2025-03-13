@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const RenderContent = ({ listings }) => {
     return (
-        <div className="darkBg container">
+        <div className="darkBg">
             {listings.map((item, index) => (
                 <section key={index} style={{marginBottom:"150px"}}>
                     <h1 className="topic darkBg">{item.topic}</h1>

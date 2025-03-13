@@ -9,10 +9,16 @@
     box-sizing: border-box;
 	vertical-align: baseline;
     font-family: "Montserrat", system-ui;
+
+    --white-0: #ffffff;
+    --grey-1: #757575;
+    --blue-grey-1: #395f74;
+    --blue-grey-2: #518eaf;
 }
 
 body{
     padding-top: 150px;
+    background-color: #00466C;
 }
 
 .main{
@@ -21,14 +27,33 @@ body{
 
 a{
     text-decoration: none;
+    color: #ffffff;
 }
 
-/* img{
-    width: 100%;
-} */
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 18px;
+}
+
 
 header{
     width: 100%;
+    height: 120px;
     display: flex;  
     align-items: center;
     background-color: #00466C;
@@ -37,7 +62,19 @@ header{
     top: 0;
     left: 0;
     z-index: 10;
-    height: 120px;
+}
+
+footer{
+    background-color: var(--dark-blue-bg);
+    display: flex;
+    flex-direction: column;
+    position:static;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    border-top: 1px solid #0f5b84;
+    /* box-shadow: -1px 0px 30px #0c3850; */
+    padding-bottom: 80px;
 }
 
 .toIndex{
@@ -46,12 +83,12 @@ header{
     left: 0;
 }
 
-.container{
-    margin-top:100px;
-}
-
 .PageXContainer{
     padding: 0px 160px;
+}
+
+.PageXContainer-sm{
+    padding: 0px 120px;
 }
 
 .componentContainer{

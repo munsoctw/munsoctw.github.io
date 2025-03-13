@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 0;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .pic{

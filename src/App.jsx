@@ -4,7 +4,9 @@ import './css/home.css'
 import './css/content.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { About, Events, Contact, Home } from './pages' 
+import { About, News, Events, Conferences, Contact, Home } from './pages' 
+import ScrolltoTop from './hooks/ScrolltoTop'
+
 
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
         return "var(--dark-blue-bg)"
         return "#fff"
       case '/about':
-        return "#ffffff"
+        return "var(--dark-blue-bg)"
       case '/events':
         return "var(--dark-blue-bg)"
       case '/contact':
@@ -46,6 +48,7 @@ function App() {
     
     <div style={{backgroundColor: getBGcolor(), position:"relative"}}>
         
+      <ScrolltoTop />
 
       <Routes>
         {location.pathname === "/" && (
@@ -54,7 +57,9 @@ function App() {
         )}
         {/* <Route path="munsoc.tw" element={<Home />}/> */}
         <Route path="/about" element={<About />}/>
+        <Route path="/news" element={<News />}/>
         <Route path="/events" element={<Events />}/>
+        <Route path="/conferences" element={<Conferences />}/>
         <Route path="/contact" element={<Contact />}/>
       </Routes>
 
